@@ -1,0 +1,143 @@
+/* Estilos generales */
+body {
+    font-family: "Roboto", Arial, "Helvetica Neue", Helvetica, sans-serif; /* Tipografía */
+    font-size: 16px; /* Tamaño de fuente */
+    color: rgb(51, 51, 51); /* Color del texto */
+    line-height: 1.6; /* Espaciado entre líneas */
+    background-color: rgb(255, 255, 255); /* Color de fondo */
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado y navegación */
+header {
+    background: #4CAF50; /* Color de fondo del encabezado */
+    color: white;
+    padding: 15px 0; /* Ajustado para más espacio */
+    text-align: center;
+    font-size: 24px; /* Tamaño de fuente para encabezado */
+}
+
+nav ul {
+    list-style: none; /* Sin puntos de lista */
+    padding: 0;
+    margin: 0; /* Sin margen */
+}
+
+nav ul li {
+    display: inline; /* Elementos en línea */
+    margin: 0 20px; /* Espaciado ajustado */
+}
+
+nav a {
+    color: white; /* Color del texto de los enlaces */
+    text-decoration: none; /* Sin subrayado */
+    font-weight: 500; /* Peso de la fuente ajustado */
+    transition: color 0.3s; /* Transición suave */
+}
+
+nav a:hover {
+    color: #FFD700; /* Color del texto al pasar el cursor */
+    text-decoration: underline; /* Subrayar al pasar el cursor */
+}
+
+/* Estilo del iframe */
+iframe {
+    border: none; /* Sin borde */
+    width: 5%; /* Ancho completo */
+    height: 200px; /* Altura fija */
+}
+
+/* Secciones */
+section {
+    padding: 20px;
+    margin: 20px; /* Margen aumentado */
+    background-color: white; /* Fondo blanco para las secciones */
+    border: 1px solid rgba(51, 51, 51, 0.1); /* Borde sutil */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
+}
+
+/* Estilo de imágenes */
+img {
+    max-width: 100%; /* Imágenes responsivas */
+    height: auto; /* Altura automática */
+    display: block;
+    margin: 10px auto; /* Centrado */
+    border: 2px solid #ccc; /* Borde sutil */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Sombra para imágenes */
+}
+
+/* Estilos para video y audio */
+video, audio {
+    width: 100%; /* Responsivo */
+    margin: 10px 0; /* Espacio vertical */
+    border: 1px solid #ccc; /* Borde sutil */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Sombra para multimedia */
+}
+
+/* Pie de página */
+footer {
+    background: #333; /* Color de fondo del pie */
+    color: white;
+    text-align: center;
+    padding: 15px 0; /* Ajustado para más espacio */
+}
+
+footer i {
+    margin: 0 10px; /* Espaciado entre iconos */
+    color: white; /* Color de los iconos */
+    font-size: 20px; /* Tamaño de los iconos */
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block; /* Cambiar a bloque en pantallas pequeñas */
+        margin: 5px 0; /* Espaciado vertical */
+    }
+
+    iframe {
+        height: 400px; /* Altura menor para pantallas pequeñas */
+    }
+
+    /* Asegurando que multimedia también sea responsivo */
+    video, audio {
+        margin: 10px 0; /* Espacio vertical */
+    }
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif; /* Fuente general */
+    margin: 0;
+    padding: 20px;
+    background-color: #f9f9f9; /* Color de fondo */
+}
+
+/* Estilos de la galería */
+.gallery {
+    display: flex; /* Usar flexbox para la galería */
+    flex-wrap: wrap; /* Permitir que las imágenes se ajusten en múltiples filas */
+    justify-content: center; /* Centrar las imágenes horizontalmente */
+    gap: 10px; /* Espacio entre las imágenes */
+}
+
+.gallery img {
+    max-width: 100%; /* Hacer que las imágenes sean responsivas */
+    height: auto; /* Mantener proporciones */
+    width: 200px; /* Ancho fijo para las imágenes */
+    border: 2px solid #ccc; /* Borde sutil */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Sombra para las imágenes */
+}
+
+/* Responsividad */
+@media (max-width: 600px) {
+    .gallery img {
+        width: 100%; /* Las imágenes ocuparán el 100% del ancho en pantallas pequeñas */
+    }
+}
+
+
